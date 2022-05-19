@@ -1,0 +1,29 @@
+###
+POST http://localhost:3000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Mercedes",
+    "edad": 44,
+    "correo": "msod123@gmail.com"
+}
+
+###
+GET  http://localhost:3000/api/usuarios HTTP/1.1
+
+
+###
+GET  http://localhost:3000/api/usuarios/6286beb1312250319d8641ac HTTP/1.1
+
+###
+PUT http://localhost:3000/api/usuarios/6286beee312250319d8641ae HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Antonio Lopez",
+    "edad": 50,
+    "correo": "xdt@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/usuarios/6286beee312250319d8641ae HTTP/1.1
