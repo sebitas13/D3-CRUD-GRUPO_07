@@ -12,10 +12,10 @@ app.use('/api',rutasUsuario);
 
 
 //routes
-
+/*
 app.get('/',(req,res) => {
     res.send('Welcome');
-});
+});*/
 
 
 //coneccion bd
