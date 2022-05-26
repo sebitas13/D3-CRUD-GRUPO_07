@@ -11,17 +11,9 @@ app.use(express.json()); //el obj body de json js
 app.use('/api',rutasUsuario);
 
 
-//routes
-/*
-app.get('/',(req,res) => {
-    res.send('Welcome');
-});*/
-
-
-//coneccion bd
 
 mongoose
-.connect(process.env.MONGODB_URI)
+.connect(process.env.MONGO.DB_URI)
 .then(()=> console.log('Conectado a MongoAtlas'))
 .catch((err)=> console.error(err));
 

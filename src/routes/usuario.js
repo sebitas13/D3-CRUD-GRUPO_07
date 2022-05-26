@@ -1,5 +1,5 @@
 
-const express = require('express');
+const express = require('express'); //instancia de express
 const usuarioSchema = require('../models/usuario'); //modelo datos usuarios
 
 const router = express.Router();
@@ -25,6 +25,28 @@ router.get('/usuarios', (req,res)=> {
     .catch((error)=> res.json({message:error}));
     //res.send('ruta de usuario creado');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Obtener un usuario
 
